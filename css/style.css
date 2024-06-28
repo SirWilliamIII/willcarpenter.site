@@ -25,6 +25,9 @@ html {
 .intro {
     text-align: center;
     position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     animation: zoomIn 2s ease-out;
@@ -98,15 +101,13 @@ html {
     }
 }
 
+
 /*-----------------------
 ----- Basic Styles -----
 -------------------------*/
 
 body {
-    font-family: Raleway,
-    Avenir Next,
-    Arial,
-    sans-serif;
+    font-family: Raleway, Avenir Next, Arial, sans-serif;
     font-size: 14pt;
     font-weight: 400;
     color: #333;
@@ -114,14 +115,14 @@ body {
 }
 
 a {
-    color: #FF6F00;
-    text-decoration: none
+    color: #ff6f00;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color: #FFA000;
-    text-decoration: underline
+    color: #ffa000;
+    text-decoration: underline;
 }
 
 a:focus,
@@ -177,11 +178,11 @@ h6,
 
 .bg2 {
     color: #fff;
-    background: #FFA000;
+    background: #ffa000;
 }
 
 .orange {
-    color: #FF6F00;
+    color: #ff6f00;
 }
 
 
@@ -194,15 +195,15 @@ h6,
     color: #fff;
     font-size: 21pt;
     font-weight: 300;
-    background: #FF6F00;
+    background: #ff6f00;
     outline: none !important;
     border-radius: 0;
-    transition: background .5s;
+    transition: background 0.5s;
 }
 
 .btn-color1:hover {
     color: #fff;
-    background: #FFA000;
+    background: #ffa000;
 }
 
 .btn-color1:focus,
@@ -316,7 +317,7 @@ h6,
     font-weight: 400;
     background: transparent;
     color: #fff;
-    transition: color .2s ease-in;
+    transition: color 0.2s ease-in;
 }
 
 #main-nav.scrolled .nav a,
@@ -333,7 +334,7 @@ h6,
 
 #main-nav.scrolled .nav li.active a,
 #main-nav.scrolled .nav a:hover {
-    color: #FF6F00;
+    color: #ff6f00;
 }
 
 #main-nav i {
@@ -368,7 +369,7 @@ h6,
     margin: 0 auto;
     font-size: 24pt;
     font-weight: 600;
-    background: #FFA000;
+    background: #ffa000;
     display: table;
     padding: 5px 10px;
     position: relative;
@@ -386,7 +387,7 @@ h6,
     z-index: -1;
     font-size: 40pt;
     font-weight: 600;
-    background: #FF6F00;
+    background: #ff6f00;
     display: table;
     padding: 20px 30px;
     border: 5px solid #fff;
@@ -403,7 +404,7 @@ h6,
 -------------------------*/
 
 #about {
-    padding-top: 50px
+    padding-top: 50px;
 }
 
 #about .about-text {
@@ -456,7 +457,7 @@ h6,
 }
 
 #about .timeline div i {
-    background: #FF6F00;
+    background: #ff6f00;
     color: #fff;
     width: 60px;
     height: 60px;
@@ -471,7 +472,7 @@ h6,
 #about .timeline div h3 {
     padding-top: 36px;
     margin-left: 30px;
-    color: #FF6F00;
+    color: #ff6f00;
     font-weight: 500;
 }
 
@@ -493,7 +494,7 @@ h6,
 #skills {
     padding-top: 60px;
     padding-bottom: 120px;
-    border-top: 10px solid #FF6F00;
+    border-top: 10px solid #ff6f00;
 }
 
 .chart {
@@ -527,7 +528,7 @@ h6,
 }
 
 .percent:after {
-    content: '%';
+    content: "%";
     margin-left: 5px;
     font-size: 30pt;
 }
@@ -554,7 +555,7 @@ h6,
 }
 
 .touch #portfolio {
-    background: #1F2C37;
+    background: #1f2c37;
 }
 
 #filter-works ul {
@@ -592,7 +593,7 @@ h6,
 
 #filter-works ul li.active a,
 #filter-works ul li:hover a {
-    color: #FF6F00;
+    color: #ff6f00;
 }
 
 .masonry-wrapper {
@@ -605,7 +606,7 @@ h6,
     margin: 0 auto;
     visibility: hidden;
     padding: 30px 0px;
-    margin-bottom: 70px
+    margin-bottom: 70px;
 }
 
 #projects-container .project-item {
@@ -624,8 +625,8 @@ h6,
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     cursor: pointer;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     z-index: 0;
 }
 
@@ -664,7 +665,7 @@ h6,
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 0px;
-    background: #FF6F00;
+    background: #ff6f00;
 }
 
 .modal-header img {
@@ -681,7 +682,7 @@ h6,
     margin: 50px;
     font-size: 26pt;
     font-weight: 600;
-    background: #FF6F00;
+    background: #ff6f00;
     padding: 5px 10px;
     border: 5px solid #fff;
     color: #fff;
@@ -699,12 +700,12 @@ h6,
     font-size: 14pt;
     font-weight: 200;
     border: 5px solid #fff;
-    background: #FFA000;
+    background: #ffa000;
     padding: 0px 10px;
 }
 
 .modal-header .close {
-    background: #FF6F00;
+    background: #ff6f00;
     border: 1px solid #fff;
     color: #fff;
     opacity: 1;
@@ -718,12 +719,12 @@ h6,
     width: 50px;
     height: 50px;
     line-height: 25px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .modal-header .close:hover {
-    background: #FFA000;
+    background: #ffa000;
     border-radius: 50% 50% 50% 50%;
 }
 
@@ -797,7 +798,7 @@ h6,
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #FF6F00;
+    background: #ff6f00;
     border-radius: 50% 50% 0 50%;
     margin-right: 5px;
     border: 1px solid #fff;
@@ -811,11 +812,11 @@ h6,
 }
 
 #contact .contact-list a:hover {
-    color: #FF6F00;
+    color: #ff6f00;
 }
 
 #contact .contact-list a:hover i {
-    background: #FFA000;
+    background: #ffa000;
     border-radius: 50% 50% 50% 50%;
 }
 
@@ -830,7 +831,7 @@ h6,
     height: 550px;
     margin: 0 auto;
     border-radius: 50% 50% 0 50%;
-    border: 10px solid #FF6F00;
+    border: 10px solid #ff6f00;
 }
 
 
@@ -841,9 +842,9 @@ h6,
 #main-footer {
     padding-top: 50px;
     padding-bottom: 40px;
-    background: #6D6D6D;
+    background: #6d6d6d;
     text-align: center;
-    border-top: 10px solid #FF6F00;
+    border-top: 10px solid #ff6f00;
 }
 
 #main-footer p {
@@ -872,7 +873,7 @@ h6,
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #FF6F00;
+    background: #ff6f00;
     border-radius: 50% 50% 0 50%;
     margin-right: 5px;
     border: 1px solid #fff;
@@ -881,7 +882,7 @@ h6,
 }
 
 .social a:hover {
-    background: #FFA000;
+    background: #ffa000;
     border-radius: 50% 50% 50% 50%;
 }
 
@@ -890,100 +891,83 @@ h6,
 ----- Media Queries ----
 ------------------------*/
 
-@media (max-width:1199px) {
+@media (max-width: 1199px) {
     #gmap {
         height: 460px;
     }
-
     #contact .contact-text {
         font-size: 13pt;
         line-height: 28px;
     }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .big-text {
         font-size: 30pt;
         line-height: 40px;
         margin-bottom: 30px;
     }
-
     #about .image {
         width: 250px;
     }
-
     .chart {
         margin-bottom: 60px;
     }
-
     .skill10 p,
     .chart p {
         font-size: 24pt;
     }
-
     #gmapMobil {
         height: 300px;
         width: 100%;
     }
-
     #main-footer {
         padding-top: 0px;
         padding-bottom: 0px;
         position: relative;
     }
-
     #main-footer .container {
         position: absolute;
         bottom: 20px;
         width: 100%;
     }
-
     #main-footer p,
     #main-footer p a {
-        color: #FF6F00;
+        color: #ff6f00;
         font-weight: 500;
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .big-text {
         font-size: 26pt;
     }
-
     body {
         font-size: 12pt;
     }
-
     #main-nav.scrolled .navbar-toggle {
-        border-color: #FF6F00;
+        border-color: #ff6f00;
     }
-
     #main-nav.scrolled .navbar-toggle .icon-bar {
-        background: #FF6F00;
+        background: #ff6f00;
     }
-
     #home p {
         font-size: 16pt;
     }
-
     #home h1,
     #home h2 {
         font-size: 20pt;
     }
-
     #home h2 {
         left: 0px;
     }
-
     #about .about-text {
         font-size: 14pt;
     }
-
     #about .timeline {
         margin-left: 35px;
     }
-
     #about .imageCont {
         text-align: center;
         padding-top: 30px;
@@ -994,40 +978,32 @@ h6,
         /* Chrome, Safari, Opera */
         transform: rotate(0deg);
     }
-
     #skills .skill10 {
         font-size: 16pt;
     }
-
     #filter-works ul li {
         display: block;
         margin: 0px;
     }
-
     #filter-works ul li a {
         padding: 5px 0px;
     }
-
     #projects-container .project-item {
         width: 250px;
     }
-
     .modal-header h4 {
         margin: 10px;
         font-size: 10pt;
         border: 2px solid #fff;
     }
-
     .modal-header h4 span {
         font-size: 9pt;
         border: 2px solid #fff;
     }
-
     #contact .contact-text {
         font-size: 14pt;
         line-height: 24px;
     }
-
     #contact .contact-list li {
         font-size: 14pt;
     }
