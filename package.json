@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-resume",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "node server/app.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
