@@ -13,20 +13,20 @@
         gtag('js', new Date());
         gtag('config', 'UA-137775432-1');
     </script>
-    <script>
-        // Initialize the agent at application startup.
-        // Some ad blockers or browsers will block Fingerprint CDN URL.
-        // To fix this, please use the NPM package instead.
-        const fpPromise =
-            import(`https://fpjscdn.net/v3/uhDFrjIiZTiOO3cK87Dy`)
-                .then(FingerprintJS => FingerprintJS.load());
 
-        // Get the visitor identifier when you need it.
+    <script>
+        // Initialize the agent once at web application startup.
+        // Alternatively initialize as early on the page as possible.
+        const fpPromise =
+            import('https://fpjscdn.net/v3/uhDFrjIiZTiOO3cK87Dy')
+                .then(FingerprintJS => FingerprintJS.load())
+
+        // Analyze the visitor when necessary.
         fpPromise
             .then(fp => fp.get())
-            .then(result => console.log(result.visitorId));
+            .then(result => console.log(result.requestId, result.visitorId))
     </script>
-    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume: Will Carpenter</title>
