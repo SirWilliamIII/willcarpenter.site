@@ -13,6 +13,20 @@
         gtag('js', new Date());
         gtag('config', 'UA-137775432-1');
     </script>
+    <script>
+        // Initialize the agent on page load.
+        const fpPromise =
+            import('https://fpjscdn.net/v3/6TuYm9Q8YzpfbDVUTUY3')
+                .then(FingerprintJS => FingerprintJS.load())
+
+        // Get the visitorId when you need it.
+        fpPromise
+            .then(fp => fp.get())
+            .then(result => {
+                const visitorId = result.visitorId
+                console.log(visitorId)
+            })
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume: Will Carpenter</title>
