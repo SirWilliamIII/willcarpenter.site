@@ -1,0 +1,29 @@
+/* This content remains the same as the previous CSS artifact */
+
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --text-color: #333;
+  --background-color: #f5f7fa;
+  --accent-color: #ff6b6b;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #000;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* ... rest of the CSS code ... */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
