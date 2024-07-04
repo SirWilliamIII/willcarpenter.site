@@ -106,6 +106,7 @@ dist
 .temp
 .cache
 
+.vscode/
 # Docusaurus cache and generated files
 .docusaurus
 
